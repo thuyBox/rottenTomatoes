@@ -9,15 +9,18 @@
 #import "MovieDetailedViewController.h"
 #import "UIImageView+AFNetworking.h"
 #import "UIImageView+AFNetworkingFadingIn.h"
+#import "FullScreenPhotoViewController.h"
 
-@interface MovieDetailedViewController ()
+@interface MovieDetailedViewController () <UIGestureRecognizerDelegate>
 
 @end
 
 @implementation MovieDetailedViewController
+UITapGestureRecognizer *tap;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.navigationItem.title = self.movieName;
     self.navigationController.view.backgroundColor = self.view.backgroundColor;
     self.movieDetailsTextView.text = self.movieDetails;
@@ -25,11 +28,27 @@
     
     NSString *posterLowResURLString = [self.posterURLString stringByReplacingOccurrencesOfString:@"_ori" withString:@"_tmb"];
     [self.posterView setImageWithURL:[NSURL URLWithString:posterLowResURLString]];
+    
+    tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped)];
+    tap.delegate = self;
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void) viewDidAppear:(BOOL)animated {
     NSLog(@"View did appear");
     [self.posterView setImageWithURL:self.posterURLString fadingInDuration:0.3];
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch;
+{
+    CGPoint touchLocation = [touch locationInView:self.view];
+    return CGRectContainsPoint(self.posterView.frame, touchLocation);
+}
+
+- (void) imageTapped {
+    FullScreenPhotoViewController *fullScreenVC = [[FullScreenPhotoViewController alloc] init];
+    fullScreenVC.poster = self.posterView.image;
+    [self presentViewController:fullScreenVC animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

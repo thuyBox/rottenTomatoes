@@ -18,6 +18,8 @@
 		7602F2081A8836C2008E69A4 /* MovieDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7602F2061A8836C2008E69A4 /* MovieDetailedViewController.m */; };
 		7602F2091A8836C2008E69A4 /* MovieDetailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7602F2071A8836C2008E69A4 /* MovieDetailedViewController.xib */; };
 		7602F20C1A887A53008E69A4 /* UIImageView+AFNetworkingFadingIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 7602F20B1A887A53008E69A4 /* UIImageView+AFNetworkingFadingIn.m */; };
+		76412D891A888EF500EA331E /* FullScreenPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76412D871A888EF500EA331E /* FullScreenPhotoViewController.m */; };
+		76412D8A1A888EF500EA331E /* FullScreenPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76412D881A888EF500EA331E /* FullScreenPhotoViewController.xib */; };
 		76C22DC81A8728EB00DEE238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C22DC71A8728EB00DEE238 /* main.m */; };
 		76C22DCB1A8728EB00DEE238 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C22DCA1A8728EB00DEE238 /* AppDelegate.m */; };
 		76C22DD31A8728EB00DEE238 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C22DD21A8728EB00DEE238 /* Images.xcassets */; };
@@ -55,6 +57,9 @@
 		7602F2071A8836C2008E69A4 /* MovieDetailedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailedViewController.xib; sourceTree = "<group>"; };
 		7602F20A1A887A53008E69A4 /* UIImageView+AFNetworkingFadingIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworkingFadingIn.h"; sourceTree = "<group>"; };
 		7602F20B1A887A53008E69A4 /* UIImageView+AFNetworkingFadingIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworkingFadingIn.m"; sourceTree = "<group>"; };
+		76412D861A888EF500EA331E /* FullScreenPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenPhotoViewController.h; sourceTree = "<group>"; };
+		76412D871A888EF500EA331E /* FullScreenPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenPhotoViewController.m; sourceTree = "<group>"; };
+		76412D881A888EF500EA331E /* FullScreenPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullScreenPhotoViewController.xib; sourceTree = "<group>"; };
 		76C22DC21A8728EB00DEE238 /* RottenTomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C22DC61A8728EB00DEE238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C22DC71A8728EB00DEE238 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,6 +153,9 @@
 				76C22DC51A8728EB00DEE238 /* Supporting Files */,
 				7602F20A1A887A53008E69A4 /* UIImageView+AFNetworkingFadingIn.h */,
 				7602F20B1A887A53008E69A4 /* UIImageView+AFNetworkingFadingIn.m */,
+				76412D861A888EF500EA331E /* FullScreenPhotoViewController.h */,
+				76412D871A888EF500EA331E /* FullScreenPhotoViewController.m */,
+				76412D881A888EF500EA331E /* FullScreenPhotoViewController.xib */,
 			);
 			path = RottenTomatoes;
 			sourceTree = "<group>";
@@ -288,6 +296,7 @@
 				7602F2091A8836C2008E69A4 /* MovieDetailedViewController.xib in Resources */,
 				76C22DD31A8728EB00DEE238 /* Images.xcassets in Resources */,
 				7602F1F41A881C1B008E69A4 /* video-camera-7.png in Resources */,
+				76412D8A1A888EF500EA331E /* FullScreenPhotoViewController.xib in Resources */,
 				7602F1F81A881E5C008E69A4 /* recorder-7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76412D891A888EF500EA331E /* FullScreenPhotoViewController.m in Sources */,
 				76C22DEE1A872BBD00DEE238 /* MoviesViewController.m in Sources */,
 				7602F2031A8831CF008E69A4 /* DVDsViewController.m in Sources */,
 				7602F1FC1A88219F008E69A4 /* MovieCollectionViewCell.m in Sources */,
