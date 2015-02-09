@@ -25,15 +25,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"DVDs";
-    // Create Collection View
-    //UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
-    //self.moviesCollectionView = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:layout];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.moviesCollectionView.backgroundColor = [UIColor whiteColor];
     self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     self.searchBar.delegate = self;
     [self.moviesCollectionView addSubview:self.searchBar];
     [self.moviesCollectionView setContentOffset:CGPointMake(0, 44)];
-    //self.moviesCollectionView.layoutMargins.
     
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(onRefresh) forControlEvents:UIControlEventValueChanged];
@@ -68,10 +65,10 @@
     }];
 }
 
-- (void) viewWillAppear:(BOOL)animated{
+/*- (void) viewWillAppear:(BOOL)animated{
     // to show search bar
-    [self.moviesCollectionView setContentOffset:CGPointMake(0, 0)];
-}
+    //[self.moviesCollectionView setContentOffset:CGPointMake(0, 0)];
+}*/
 
 
 #pragma mark - UISearchBarDelegate
@@ -150,7 +147,6 @@
     NSLog(@"movie=%@",movie);
     cell.movieNameLabel.text = movie[@"title"];
     NSString *posterURLString = [movie[@"posters"][@"thumbnail"] stringByReplacingOccurrencesOfString:@"_tmb" withString:@"_ori"];
-    NSURL *url = [NSURL URLWithString:posterURLString];
     [cell.posterView setImageWithURL:posterURLString fadingInDuration:0.3];
     return cell;
 }
@@ -161,7 +157,6 @@
     attachment.image = [UIImage imageNamed:@"warning_24_ns.png"];
     
     NSAttributedString *attachmentString = [NSAttributedString attributedStringWithAttachment:attachment];
-    
     
     NSMutableAttributedString *myString= [[NSMutableAttributedString alloc] init];
     [myString appendAttributedString:attachmentString];

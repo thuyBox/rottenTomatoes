@@ -176,8 +176,6 @@
     cell.movieNameLabel.text = movie[@"title"];
     cell.movieTextView.text = movie[@"synopsis"];
     NSString *posterURLString = [movie[@"posters"][@"thumbnail"] stringByReplacingOccurrencesOfString:@"_tmb" withString:@"_ori"];
-    //NSURL *url = [NSURL URLWithString:posterURLString];
-    //[cell.posterView setImageWithURL:url];
     [cell.posterView setImageWithURL:posterURLString fadingInDuration:0.3];
     return cell;
 }

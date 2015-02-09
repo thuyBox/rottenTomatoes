@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48354F088674AA4D40D586E9 /* libPods-RottenTomatoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 970D4AA3AB15C7800943931F /* libPods-RottenTomatoes.a */; };
-		7602F1F01A8763E4008E69A4 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 7602F1EF1A8763E4008E69A4 /* video.png */; };
-		7602F1F21A881BAD008E69A4 /* video-player-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7602F1F11A881BAD008E69A4 /* video-player-7.png */; };
 		7602F1F41A881C1B008E69A4 /* video-camera-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7602F1F31A881C1B008E69A4 /* video-camera-7.png */; };
-		7602F1F61A881E2A008E69A4 /* update-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7602F1F51A881E2A008E69A4 /* update-7.png */; };
 		7602F1F81A881E5C008E69A4 /* recorder-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7602F1F71A881E5C008E69A4 /* recorder-7.png */; };
 		7602F1FC1A88219F008E69A4 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7602F1FA1A88219F008E69A4 /* MovieCollectionViewCell.m */; };
 		7602F1FD1A88219F008E69A4 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7602F1FB1A88219F008E69A4 /* MovieCollectionViewCell.xib */; };
@@ -29,7 +26,6 @@
 		76C22DEE1A872BBD00DEE238 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C22DEC1A872BBD00DEE238 /* MoviesViewController.m */; };
 		76C22DF51A8735A800DEE238 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C22DF31A8735A800DEE238 /* MovieTableViewCell.m */; };
 		76C22DF61A8735A800DEE238 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C22DF41A8735A800DEE238 /* MovieTableViewCell.xib */; };
-		76F9C5571A87548F00E74DA3 /* warning.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 76F9C5561A87548F00E74DA3 /* warning.jpeg */; };
 		76F9C5591A87567200E74DA3 /* warning_24_ns.png in Resources */ = {isa = PBXBuildFile; fileRef = 76F9C5581A87567200E74DA3 /* warning_24_ns.png */; };
 /* End PBXBuildFile section */
 
@@ -45,10 +41,7 @@
 
 /* Begin PBXFileReference section */
 		291411A48F45A689D9F21214 /* Pods-RottenTomatoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RottenTomatoes/Pods-RottenTomatoes.debug.xcconfig"; sourceTree = "<group>"; };
-		7602F1EF1A8763E4008E69A4 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
-		7602F1F11A881BAD008E69A4 /* video-player-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video-player-7.png"; sourceTree = "<group>"; };
 		7602F1F31A881C1B008E69A4 /* video-camera-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video-camera-7.png"; sourceTree = "<group>"; };
-		7602F1F51A881E2A008E69A4 /* update-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "update-7.png"; sourceTree = "<group>"; };
 		7602F1F71A881E5C008E69A4 /* recorder-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recorder-7.png"; sourceTree = "<group>"; };
 		7602F1F91A88219F008E69A4 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
 		7602F1FA1A88219F008E69A4 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
@@ -77,7 +70,6 @@
 		76C22DF21A8735A800DEE238 /* MovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
 		76C22DF31A8735A800DEE238 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
 		76C22DF41A8735A800DEE238 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
-		76F9C5561A87548F00E74DA3 /* warning.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warning.jpeg; sourceTree = "<group>"; };
 		76F9C5581A87567200E74DA3 /* warning_24_ns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning_24_ns.png; sourceTree = "<group>"; };
 		970D4AA3AB15C7800943931F /* libPods-RottenTomatoes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RottenTomatoes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08024267AC6B781679615C8 /* Pods-RottenTomatoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoes.release.xcconfig"; path = "Pods/Target Support Files/Pods-RottenTomatoes/Pods-RottenTomatoes.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,12 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				7602F1F71A881E5C008E69A4 /* recorder-7.png */,
-				7602F1F51A881E2A008E69A4 /* update-7.png */,
 				7602F1F31A881C1B008E69A4 /* video-camera-7.png */,
-				7602F1F11A881BAD008E69A4 /* video-player-7.png */,
-				7602F1EF1A8763E4008E69A4 /* video.png */,
 				76F9C5581A87567200E74DA3 /* warning_24_ns.png */,
-				76F9C5561A87548F00E74DA3 /* warning.jpeg */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -291,18 +279,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7602F1F21A881BAD008E69A4 /* video-player-7.png in Resources */,
 				76C22DF61A8735A800DEE238 /* MovieTableViewCell.xib in Resources */,
 				76F9C5591A87567200E74DA3 /* warning_24_ns.png in Resources */,
-				7602F1F01A8763E4008E69A4 /* video.png in Resources */,
 				7602F1FD1A88219F008E69A4 /* MovieCollectionViewCell.xib in Resources */,
-				7602F1F61A881E2A008E69A4 /* update-7.png in Resources */,
 				76C22DD61A8728EB00DEE238 /* LaunchScreen.xib in Resources */,
 				7602F1FF1A883049008E69A4 /* MoviesViewController.xib in Resources */,
 				7602F2041A8831CF008E69A4 /* DVDsViewController.xib in Resources */,
 				7602F2091A8836C2008E69A4 /* MovieDetailedViewController.xib in Resources */,
 				76C22DD31A8728EB00DEE238 /* Images.xcassets in Resources */,
-				76F9C5571A87548F00E74DA3 /* warning.jpeg in Resources */,
 				7602F1F41A881C1B008E69A4 /* video-camera-7.png in Resources */,
 				7602F1F81A881E5C008E69A4 /* recorder-7.png in Resources */,
 			);

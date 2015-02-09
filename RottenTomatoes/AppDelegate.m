@@ -24,7 +24,7 @@ enum ListType : NSUInteger {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
+    //[[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
     
     UIImage *nowPlayingImage = [UIImage imageNamed:@"video-camera-7.png"];
     MoviesViewController *moviesvc = [[MoviesViewController alloc] init];
